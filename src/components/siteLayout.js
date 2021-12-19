@@ -1,8 +1,8 @@
 import React from "react"
 
-import "../styles/main.scss"
+import Header from "./layout/header"
 
-import Header from "./header"
+import "../styles/main.scss"
 
 const SiteLayout = props => {
   return (
