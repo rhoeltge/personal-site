@@ -1,0 +1,29 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8rem;
+
+  height: 3.6rem;
+  padding: 0 2rem;
+  border: 0;
+
+  -webkit-appearance: none;
+
+  background-color: $color-primary;
+  color: $color-text--contrast;
+
+  cursor: pointer;
+  transition: background-color 0.25s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary--shade;
+    color: $color-text--contrast;
+  }
+
+  svg {
+    margin-left: -0.2rem;
+  }
+}

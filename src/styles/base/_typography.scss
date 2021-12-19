@@ -1,0 +1,41 @@
+body {
+  font-size: 2.4rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  color: #{$color-text};
+}
+
+#{$heading-selectors} {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 6.4rem;
+
+  color: #{$color-primary};
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: #{$color-primary};
+  transition: color 0.25s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #{$color-primary--shade};
+  }
+
+  &.no-underline {
+    text-decoration: none !important;
+  }
+}

@@ -1,10 +1,12 @@
 // Colors
-$backgroundColor: #fff;
-$textColor: #000;
-$primaryColor: #e92963;
+$color-primary: #e92963;
+$color-primary--tint: lighten(#e92963, 10%);
+$color-primary--shade: darken(#e92963, 10%);
+$color-background: #fff;
+$color-text: #000;
+$color-text--contrast: #fff;
 
-// Bootstrap customization
-$grid-columns: 12;
+// Bootstrap Grid customization
 $grid-gutter-width: 50px;
 
 $grid-breakpoints: (
@@ -21,3 +23,6 @@ $container-max-widths: (
   lg: 960px,
   xl: 1306px,
 );
+
+// Misc
+$heading-selectors: "h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6";
