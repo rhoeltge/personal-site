@@ -1,6 +1,7 @@
 import React from "react"
 
 import Button from "./button"
+
 import { mdiFilePdfBox } from "@mdi/js"
 
 const Header = () => {
@@ -16,7 +17,8 @@ const Header = () => {
       <div className="container">
         <a className="header__logo no-underline" href="/">
           <h3>
-            rh<span class="header__logo-ext">oeltge.de</span>
+            r<span className="header__logo-ext">.</span>h
+            <span className="header__logo-ext">oeltge.de</span>
           </h3>
         </a>
         <nav className="header__nav">

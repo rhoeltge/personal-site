@@ -8,20 +8,23 @@ body {
 #{$heading-selectors} {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  margin-top: 0px;
+  margin: 0;
 }
 
-h1 {
-  font-size: 6.4rem;
+h1,
+.h1 {
+  font-size: 5.9rem;
 
   color: #{$color-primary};
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 3.6rem;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 2.8rem;
 }
 
@@ -30,12 +33,16 @@ a {
   transition: color 0.25s;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: #{$color-primary--shade};
   }
 
   &.no-underline {
     text-decoration: none !important;
   }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
 }

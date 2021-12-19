@@ -12,3 +12,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+:root {
+  --header-height: 12rem;
+
+  @include media-breakpoint-down(md) {
+    --header-height: 10rem;
+  }
+}
