@@ -51,10 +51,13 @@
       }
 
       a {
-        color: #{$color-text};
+        &,
+        &:focus,
+        &:active {
+          color: #{$color-text};
+        }
 
-        &:hover,
-        &:focus {
+        &:hover {
           color: #{$color-primary};
         }
       }

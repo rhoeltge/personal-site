@@ -1,11 +1,11 @@
-const getParallaxOffset = (ref, factor) => {
+const getParallaxOffset = (ref, factor, pos) => {
   if (!ref.current) {
     return 0
   }
 
   return (
     (window.scrollY +
-      window.innerHeight * 0.35 -
+      window.innerHeight * pos -
       ref.current.offsetHeight * 0.5 -
       ref.current.offsetTop) *
     factor *

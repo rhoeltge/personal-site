@@ -21,6 +21,7 @@ h1,
 h2,
 .h2 {
   font-size: 4.8rem;
+  margin-bottom: 2rem;
 
   color: #{$color-primary};
 }
@@ -28,6 +29,8 @@ h2,
 h3,
 .h3 {
   font-size: 3.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h4,
@@ -42,11 +45,15 @@ h6,
 }
 
 a {
-  color: #{$color-primary};
   transition: color 0.25s;
 
-  &:hover,
-  &:focus {
+  &,
+  &:focus,
+  &:active {
+    color: #{$color-primary};
+  }
+
+  &:hover {
     color: #{$color-primary--shade};
   }
 

@@ -4,6 +4,8 @@ import Button from "./button"
 
 import { mdiFilePdfBox } from "@mdi/js"
 
+import scrollToElement from "../helpers/scrollToElement"
+
 const Header = () => {
   const navItems = [
     { title: "Über Mich", slug: "about" },
@@ -24,7 +26,14 @@ const Header = () => {
         <nav className="header__nav">
           <ul>
             {navItems.map(el => (
-              <a className="no-underline" key={el.slug} href={`#${el.slug}`}>
+              <a
+                className="no-underline"
+                key={el.slug}
+                href={`#${el.slug}`}
+                onClick={event => {
+                  scrollToElement(event, el.slug)
+                }}
+              >
                 {el.title}
               </a>
             ))}

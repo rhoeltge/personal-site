@@ -13,8 +13,10 @@ html {
 
 :root {
   --header-height: 12rem;
+  --section-gap: 20rem;
 
   @include media-breakpoint-down(md) {
     --header-height: 10rem;
+    --section-gap: 12rem;
   }
 }

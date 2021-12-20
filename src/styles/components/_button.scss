@@ -10,14 +10,17 @@
 
   -webkit-appearance: none;
 
-  background-color: $color-primary;
-  color: $color-text--contrast;
-
   cursor: pointer;
   transition: background-color 0.25s;
 
-  &:hover,
-  &:focus {
+  &,
+  &:focus,
+  &:active {
+    background-color: $color-primary;
+    color: $color-text--contrast;
+  }
+
+  &:hover {
     background-color: $color-primary--shade;
     color: $color-text--contrast;
   }

@@ -17,7 +17,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const handleScroll = () =>
-      setImageParallaxOffset(getParallaxOffset(imageRef, -0.25))
+      setImageParallaxOffset(getParallaxOffset(imageRef, -0.25, 0.35))
     handleScroll()
 
     window.addEventListener("scroll", handleScroll)
@@ -37,7 +37,7 @@ const HeroSection = () => {
                   transform: `translateY(${imageParallaxOffset}px)`,
                 }}
                 src="/hero.png"
-                alt="Hero"
+                alt="Autobahn Langzeitbelichtung"
               />
             </div>
           </div>
