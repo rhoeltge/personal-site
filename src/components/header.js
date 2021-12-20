@@ -11,7 +11,7 @@ const Header = () => {
   const [showNav, setShowNav] = useState(true)
 
   const navItems = [
-    { title: "Über Mich", slug: "about" },
+    { title: "Über mich", slug: "about" },
     { title: "Projekte", slug: "projects" },
     { title: "Skills", slug: "skills" },
     { title: "Kontakt", slug: "contact" },
