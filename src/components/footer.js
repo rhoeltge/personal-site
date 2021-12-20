@@ -16,19 +16,19 @@ const Footer = () => {
           <h6>Kontakt</h6>
           <h2>Lernen wir uns kennen</h2>
           <div className="row">
-            <div className="col col-6">
+            <div className="col col-12 col-sm-6">
               <h3>Telefon</h3>
               <p>
                 <a href="tel:+4915759631001">+49 1575 9631001</a>
               </p>
             </div>
-            <div className="col col-6">
+            <div className="col col-12 col-sm-6">
               <h3>Email</h3>
               <p>
                 <a href={`mailto:${getEmail()}`}>{getEmail()}</a>
               </p>
             </div>
-            <div className="col col-6">
+            <div className="col col-12 col-sm-6">
               <h3>LinkedIn</h3>
               <p>
                 <a href="https://linkedin.com/in/rhoeltge">
@@ -36,7 +36,7 @@ const Footer = () => {
                 </a>
               </p>
             </div>
-            <div className="col col-6">
+            <div className="col col-12 col-sm-6">
               <h3>GitHub</h3>
               <p>
                 <a href="https://github.com/rhoeltge">github.com/rhoeltge</a>

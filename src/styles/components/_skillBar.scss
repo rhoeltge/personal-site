@@ -4,9 +4,18 @@
   align-items: center;
   margin-bottom: 1rem;
 
+  @include media-breakpoint-down(md) {
+    column-gap: #{$grid-gutter-width * 0.5};
+  }
+
   &__label {
     width: 13rem;
     text-align: right;
+
+    @include media-breakpoint-down(md) {
+      width: 10rem;
+      font-size: 1.8rem;
+    }
   }
 
   &__bar {

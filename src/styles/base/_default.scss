@@ -3,6 +3,10 @@ html {
   font-size: 10px;
 
   box-sizing: border-box;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 9px;
+  }
 }
 
 *,

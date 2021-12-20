@@ -55,7 +55,7 @@ const ProjectsSection = () => {
                 position="Co-Founder KlimaKarl"
               >
                 „Während der Entwicklung von KlimaKarl haben wir lange und
-                intensiv mit Ruwen zusammen gearbeiten. Bei gemeinsamen Terminen
+                intensiv mit Ruwen zusammen gearbeitet. Bei gemeinsamen Terminen
                 hat er stets mitgedacht und schnell verschiedene Lösungsansätze
                 geliefert. Seine logische und strukturierte Arbeitsweise hat
                 nicht nur Zeit und Geld gespart, sondern auch dafür gesorgt,
