@@ -13,6 +13,7 @@ const SkillsSection = () => {
     { skill: "HTML", percentage: 100 },
     { skill: "CSS", percentage: 100 },
     { skill: "JavaScript", percentage: 95 },
+    { skill: "PHP", percentage: 80 },
     { skill: "Git", percentage: 75 },
   ]
 
