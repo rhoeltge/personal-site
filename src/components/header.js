@@ -16,10 +16,10 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <a className="header__logo no-underline" href="/">
-          <h3>
+          <h4>
             r<span className="header__logo-ext">.</span>h
             <span className="header__logo-ext">oeltge.de</span>
-          </h3>
+          </h4>
         </a>
         <nav className="header__nav">
           <ul>
@@ -35,7 +35,6 @@ const Header = () => {
             icon={mdiFilePdfBox}
             label="Lebenslauf"
           />
-          {/* <Button label="Lebenslauf"></Button> */}
         </nav>
       </div>
     </header>

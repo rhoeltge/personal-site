@@ -1,18 +1,29 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Icon from "@mdi/react"
 
 import { mdiLinkedin, mdiGithub } from "@mdi/js"
 
+import getEmail from "../../helpers/getEmail"
+import getParallaxOffset from "../../helpers/getParallaxOffset"
+
 const HeroSection = () => {
+  const imageRef = useRef()
   const [email, setEmail] = useState("")
+  const [imageParallaxOffset, setImageParallaxOffset] = useState(0)
 
   useEffect(() => {
-    const parts = ["ltge.de", "ruw", 64, "en", "hoe"]
-
-    setEmail(
-      parts[1] + parts[3] + String.fromCharCode(parts[2]) + parts[4] + parts[0]
-    )
+    setEmail(getEmail())
   }, [])
+
+  useEffect(() => {
+    const handleScroll = () =>
+      setImageParallaxOffset(getParallaxOffset(imageRef, -0.25))
+    handleScroll()
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [imageParallaxOffset])
 
   return (
     <section className="section-hero">
@@ -20,7 +31,14 @@ const HeroSection = () => {
         <div className="container">
           <div className="row justify-content-end">
             <div className="col col-10">
-              <img src="https://picsum.photos/200/300" alt="Hero Image" />
+              <img
+                ref={imageRef}
+                style={{
+                  transform: `translateY(${imageParallaxOffset}px)`,
+                }}
+                src="/hero.png"
+                alt="Hero"
+              />
             </div>
           </div>
         </div>
@@ -45,10 +63,18 @@ const HeroSection = () => {
                 </p>
 
                 <div className="section-hero__icons">
-                  <a href="https://linkedin.com/in/rhoeltge" target="_blank">
+                  <a
+                    href="https://linkedin.com/in/rhoeltge"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Icon path={mdiLinkedin} size={3} />
                   </a>
-                  <a href="https://github.com/rhoeltge" target="_blank">
+                  <a
+                    href="https://github.com/rhoeltge"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Icon path={mdiGithub} size={3} />
                   </a>
                 </div>
