@@ -1,0 +1,21 @@
+.footer {
+  &__top {
+    padding: calc(var(--section-gap) * 0.5) 0;
+    background-color: #{$color-background--accent};
+
+    .col p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bottom {
+    padding: 2rem 0;
+    background-color: #{$color-background--contrast};
+    font-size: 1.8rem;
+
+    a {
+      color: #{$color-text--contrast};
+      text-decoration: none;
+    }
+  }
+}

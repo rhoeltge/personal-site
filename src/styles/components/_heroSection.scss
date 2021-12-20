@@ -4,6 +4,10 @@
 
   margin-top: calc(5vh + var(--header-height));
 
+  @include media-breakpoint-down(lg) {
+    margin-bottom: -5rem;
+  }
+
   &__foreground {
     position: absolute;
     width: 100%;
@@ -66,6 +70,10 @@
       width: calc(100% - #{$grid-gutter-width});
       top: 0;
       object-fit: cover;
+
+      @include media-breakpoint-down(lg) {
+        transform: none !important;
+      }
     }
   }
 }
